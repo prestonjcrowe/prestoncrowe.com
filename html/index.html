@@ -1,39 +1,52 @@
+<!DOCTYPE html>
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>(˶ᵔ ᵕ ᵔ˶)</title>
       <style>
         a:link {
           color: rgb(218, 134, 134);
         }
 
-        /* visited link */
         a:visited {
           color: rgba(182, 58, 37, 0.87);
         }
 
-        /* mouse over link */
         a:hover {
           color: rgb(184, 185, 182);
         }
 
-        /* selected link */
         a:active {
           color: rgb(255, 66, 66);
         }
-
-	pre {
-          font-size: 16px;	
-	}
 
 	body {
 	  background-color: black;
 	  color: white;
 	}
+
+	.container {
+	  max-width: 600px;
+	  margin: auto;
+	}
+
+	@media (width < 600px) {
+	  .content {
+	    width: 100%;
+	    font-size: 2vw;
+	  }
+	}
+	@media (width >= 600px) {
+	  .content {
+            float: left;
+	    padding: 10px;
+	  }
+	}
     </style>
     </head>
     <body>
-
-      <div style="max-width:600px;margin:auto;">
-        <div style="float:left;padding:10px;">
+      <div class="container">
+	<div class="content">
           <pre>                                   __
                                    \ \
                                     \ \
@@ -69,17 +82,16 @@ _____________________________________________________________________________
      [PROJECTS]
        
        [PROJECT] kana.build (js)
-       [DESC]    Japanese language learning tool to practice character 
-                 recognition. Allows the user to select a specific set of
-                 Hiragana and Katana characters, then practice reading random
-                 words that contain only those characters.
+       [DESC]    japanese character recognition practice tool. select a group
+                 of kana to practice reading random dictionary words that 
+	         only contain the target characters.
        [URL]     <a href="https://kana.build" target="_blank">https://kana.build</a>
 
        -----------------------------------------------------------------------
               
-       [PROJECT] Riemann Sums Visualization (js)
-       [DESC]    A tool for educators and students to visualize Riemann sums;
-                 the foundation of integral calculus. Use the slider to change
+       [PROJECT] riemann sums visualization (js)
+       [DESC]    tool for educators and students to visualize Riemann sums;
+                 the foundation of integral calculus. use the slider to change
                  n and click the values above the graph to toggle Left, Right,
                  and Trapezoidal sums. Open the menu by clicking the icon in
                  the bottom right or by pressing space.
@@ -87,29 +99,36 @@ _____________________________________________________________________________
 
        -----------------------------------------------------------------------
 
-       [PROJECT] Goodwill Auction Bot (py)
-       [DESC]    Python bot for sniping gamecube controllers, VHS tapes and
-                 more on shopgoodwill.com. Sends me email notifications for
-                 interesting auctions. Also supports notifications via twitter
-                 posts and telegram. Easily customizable.
+       [PROJECT] goodwill auction bot (py)
+       [DESC]    python bot for sniping gamecube controllers, VHS tapes and
+                 more on shopgoodwill.com. sends me email notifications for
+                 interesting auctions. also supports notifications via twitter
+                 posts and telegram. easily customizable.
        [URL]     <a href="https://github.com/prestonjcrowe/shop-goodwill-bot" target="_blank">https://github.com/prestonjcrowe/shop-goodwill-bot</a>
 
        -----------------------------------------------------------------------
 
-       [PROJECT] Binance Order Book (go)
-       [DESC]    A cryptocurrency oder book built on Binance's API . Listens
+       [PROJECT] binance order book (go)
+       [DESC]    cryptocurrency oder book built on Binance's API . listens
                  to Binance's websocket feeds to replicate their order book
                  and compute Bollinger bands in real time.
        [URL]     <a href="https://github.com/prestonjcrowe/binance-order-book" target="_blank">https://github.com/prestonjcrowe/binance-order-book</a>
 
        -----------------------------------------------------------------------
 
-       [PROJECT] UNIX Write Annoyware (py)
-       [DESC]    Bug your friends and log their activity on CSE servers by
-                 abusing the write command! With no arguments, logs active
-                 users to logs/TIMESTAMP.csv. Use the --evil flag to
+       [PROJECT] UNIX write annoyware (py)
+       [DESC]    bug your friends and log their activity on CSE servers by
+                 abusing the write command! with no arguments, logs active
+                 users to logs/TIMESTAMP.csv. use the --evil flag to
                  indefinitely spam a message to one or more target ttys.
        [URL]     <a href="https://github.com/prestonjcrowe/attu-fun" target="_blank">https://github.com/prestonjcrowe/attu-fun</a>
+
+_______________________________________________________________________________
+
+     [PUBLICATIONS]
+
+       [F5 2018]  <a href="https://www.f5.com/labs/articles/threat-intelligence/breaking-down-the-door-to-emergency-services-through-cellular-io" target="_blank">Breaking Emergency Services through Cellular IoT Gateways</a>
+       [EH 2021]  <a href="https://www.extrahop.com/blog/petitpotam-and-ntlm-relay-attacks" target="_blank">PetitPotam: Expanding NTLM Relay Attacks</a>
 
 _______________________________________________________________________________
 
